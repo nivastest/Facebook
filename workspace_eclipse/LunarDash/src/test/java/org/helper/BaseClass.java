@@ -43,6 +43,11 @@ public static WebDriver driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File des = new File("D:\\"+imageName+".png");
 		FileUtils.copyFile(src, des);
+		}
 	
+	public static void quitBrowser() {
+		driver.quit();
 	}
+	
+	
 }
